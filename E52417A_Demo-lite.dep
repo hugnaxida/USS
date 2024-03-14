@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>64623888</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\modules\mod_app.c</file>
+            <file>$PROJ_DIR$\modules\mod_dac.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\sys_state_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\modules\mod_crc16.c</file>
+            <file>$PROJ_DIR$\modules\mod_dac.h</file>
+            <file>$PROJ_DIR$\modules\mod_dsi3.c</file>
+            <file>$PROJ_DIR$\modules\mod_dsi3_cfg.c</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417B\def_dac.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\nvic_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\modules\mod_ada.c</file>
+            <file>$PROJ_DIR$\modules\mod_dsi3_cfg.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\swtimer_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\sys_state_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\nvic_Interface.h</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417B\def_swtimer.h</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417B\def_brg.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\nvic_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\system_ctrl_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\system_ctrl_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\modules\def_app.h</file>
+            <file>$PROJ_DIR$\modules\mod_ada.h</file>
+            <file>$PROJ_DIR$\modules\mod_dsi3.h</file>
+            <file>$PROJ_DIR$\modules\def_uart.h</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417B\def_dsi3.h</file>
+            <file>$PROJ_DIR$\modules\mod_app.h</file>
+            <file>$PROJ_DIR$\modules\mod_crc16.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\swtimer_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\modules\mod_util.c</file>
+            <file>$PROJ_DIR$\modules\mod_eeprom_access.h</file>
+            <file>$PROJ_DIR$\modules\mod_util.h</file>
+            <file>$PROJ_DIR$\modules\mod_gpio.h</file>
+            <file>$PROJ_DIR$\modules\mod_wdg.c</file>
+            <file>$PROJ_DIR$\modules\mod_wdg.h</file>
+            <file>$PROJ_DIR$\modules\uart_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\modules\uart_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\modules\mod_syss.c</file>
+            <file>$PROJ_DIR$\cstartup_M_elmos.s</file>
+            <file>$PROJ_DIR$\modules\mod_meas.c</file>
+            <file>$PROJ_DIR$\Dsi3DrvImp_CompilationConfig.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\MisraExceptions.h</file>
+            <file>$PROJ_DIR$\modules\mod_err.h</file>
+            <file>$PROJ_DIR$\modules\mod_lab.h</file>
+            <file>$PROJ_DIR$\modules\mod_dsp.c</file>
+            <file>$PROJ_DIR$\modules\mod_eeprom.h</file>
+            <file>$PROJ_DIR$\modules\mod_gpio.c</file>
+            <file>$PROJ_DIR$\modules\mod_mem.h</file>
+            <file>$PROJ_DIR$\modules\mod_eeprom_access.c</file>
+            <file>$PROJ_DIR$\modules\mod_meas.h</file>
+            <file>$PROJ_DIR$\modules\mod_mem.c</file>
+            <file>$PROJ_DIR$\modules\mod_err.c</file>
+            <file>$PROJ_DIR$\modules\mod_swt.c</file>
+            <file>$PROJ_DIR$\modules\mod_lab.c</file>
+            <file>$PROJ_DIR$\modules\mod_swt.h</file>
+            <file>$PROJ_DIR$\modules\mod_syss.h</file>
+            <file>$PROJ_DIR$\modules\mod_uart.c</file>
+            <file>$PROJ_DIR$\modules\mod_dsp.h</file>
+            <file>$PROJ_DIR$\modules\mod_uart.h</file>
+            <file>$PROJ_DIR$\modules\mod_eeprom.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_lab.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_wdg.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_lab.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\elmos\includes\io_m52417b_IAR.h</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\elmos\includes\core_cm0_IAR.h</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417A\def_dsp.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_ctrl_InterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsp.__cstat.et</file>
+            <file>$PROJ_DIR$\version_build.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_crc16.__cstat.et</file>
+            <file>$PROJ_DIR$\version.h</file>
+            <file>$PROJ_DIR$\elmos\includes\io_m52417a_IAR.h</file>
+            <file>$PROJ_DIR$\elmos\includes\el_helper_ACM0_IAR.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\E52417A_Demo-lite.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\CommonInterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\dbc.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417A\nvic_Interface.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_mem.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\swtimer_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\elmos\includes\el_types_ACM0_GCC.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\dsi3_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\elmos\includes\el_regs_m52417a_IAR.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_meas.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417A\def_syss.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_ctrl_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\M52417A-lite.icf</file>
+            <file>$PROJ_DIR$\elmos\DSI3Drv\includes\interfaces\Dsi3Bus_Defaults.h</file>
+            <file>$PROJ_DIR$\elmos\DSI3Drv\includes\interfaces\Dsi3Bus_Interface.h</file>
+            <file>$PROJ_DIR$\elmos\DSI3Drv\devices\M52417B\Bus\Dsi3Bus_Implementation.h</file>
+            <file>$PROJ_DIR$\elmos\includes\el_types.h</file>
+            <file>$PROJ_DIR$\elmos\includes\io_m52417b.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\CommonInterruptHandler.h</file>
+            <file>$PROJ_DIR$\elmos\DSI3Drv\includes\interfaces\Dsi3Bus_Types.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\dsi3_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\dsi3_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\dsp_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\dsp_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\elmos\includes\el_helper.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\eeprom_ctrl_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\elmos\DSI3Drv\devices\M52417B\Bus\Dsi3Bus_Implementation.c</file>
+            <file>$PROJ_DIR$\elmos\includes\el_regs_m52417b_IAR.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\gpio_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\includes\el_helper.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\gpio_InterruptHandler.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\CommonInterruptHandler.c</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417B\eeprom_ctrl_InterruptHandler.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_syss.xcl</file>
+            <file>$PROJ_DIR$\elmos\includes\el_types_ACM0_IAR.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio_InterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\el_helper.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_lab.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\elmos\DSI3Drv\devices\M52417A\Bus\Dsi3Bus_Implementation.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsi3_cfg.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsp.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_ada.xcl</file>
+            <file>$PROJ_DIR$\Debug\Exe\E52417A_Demo-lite.hex</file>
+            <file>$PROJ_DIR$\Debug\Obj\dsp_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_app.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\dsp_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\nvic_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_mem.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\dsp_InterruptHandler.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_syss.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom_ctrl_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_wdg.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_meas.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\nvic_InterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom_ctrl_InterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_err.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\el_helper.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dac.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_ctrl_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\nvic_InterruptHandler.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsi3.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_util.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsi3_cfg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_app.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsi3_cfg.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_eeprom_access.__cstat.et</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417A\def_ada.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_swt.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsi3.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_app.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dac.xcl</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417A\def_gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_err.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\swtimer_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\sys_state_InterruptHandler.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_eeprom.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_mem.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\dsi3_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\el_helper.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom_ctrl_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\elmos\modules\devices\M52417A\def_wdog.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_crc16.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup_M_elmos.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Dsi3Bus_Implementation.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\CommonInterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsi3.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_wdg.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_gpio.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\sys_state_InterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_err.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_eeprom_access.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_ada.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\swtimer_InterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_util.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_syss.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\sys_state_InterruptHandler.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dsp.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_swt.o</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Lib\IAR\iar_cortexM0l_math.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\CommonInterruptHandler.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_eeprom.o</file>
+            <file>$PROJ_DIR$\elmos\includes\el_helper_ACM0_IAR.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_util.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_ada.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_eeprom.xcl</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417A\sys_state_InterruptHandler.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iar_intrinsics_common.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_crc16.xcl</file>
+            <file>$PROJ_DIR$\elmos\includes\io_m52417a.h</file>
+            <file>$PROJ_DIR$\elmos\irq\M52417A\nvic_InterruptHandler.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_meas.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_swt.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_dac.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_eeprom_access.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\Dsi3Bus_Implementation.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\mod_uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\dsi3_InterruptHandler.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\Dsi3Bus_Implementation.__cstat.et</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_app.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 159</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 21 91 48 53 14 11 15 41 29 20 155 203 73 83 56 67 8 100 125 212 151 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_dac.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 141</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 160</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 209</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4 93 111 157 206 163 129 166 193 86 7 94 64 66 60 131 201 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_crc16.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 202</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 175</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 41</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_dsi3.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 158</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 146</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 91 10 118 38 90 44 41 24 48 53 14 11 15 42 100 54 87 203 73 83 204 78 200 46</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_dsi3_cfg.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 153</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 119</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 149</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10 118 38 93 111 157 206 163 129 166 193 86 91 96 98 13 23 94 64 66 60 131 201 104 90 19 21</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_ada.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 185</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 121</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 198</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20 93 111 157 206 163 129 166 193 86 155 203 73 66 60 131 201 83</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\sys_state_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 182</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 165</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 189</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 2</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\nvic_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 144</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 136</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 127</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 101 196 8 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\system_ctrl_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 142</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 18</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\swtimer_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 164</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 186</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_util.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 148</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 187</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 197</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 157 206 163 129 166 193 19 96 98 93 111 86 13 23 94 64 66 60 131 201 104 41 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_wdg.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 134</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 180</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32 174 203 93 111 157 206 163 129 166 193 86 73 66 60 131 201 83</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\uart_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 147</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 139</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 34</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_syss.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 132</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 110</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 87 203 93 111 157 206 163 129 166 193 86 73 66 60 131 201 83 204 78 200 95 13 18 41 19 96 98 23 94 64 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup_M_elmos.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 176</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_meas.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 84</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 135</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 53 14 11 15 10 118 38 91 90 24 21 42 100 29 41 56 67 203 73 83 8 125 212 151</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 116</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 167</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72 70 54 87 203 93 111 157 206 163 129 166 193 86 73 66 60 131 201 83 204 78 200 32 174 30 161 4 7 94 64 104 20 155 10 118 38 91 96 98 13 23 90 19 56 67 8 100 41 44 24 21 48 53 14 11 15 42 46 25 28 57 22 34</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_dsp.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 190</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56 67 203 93 111 157 206 163 129 166 193 86 73 66 60 131 201 83 8 13 100</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 181</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30 93 111 157 206 163 129 166 193 86 161 203 73 66 60 131 201 83 19 96 98 13 23 94 64 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_eeprom_access.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 154</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 210</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28 93 111 157 206 163 129 166 193 86 32 174 203 73 66 60 131 201 83 24 19 96 98 13 23 94 64 104 21 91 48 53 14 11 15 44</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_mem.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 170</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 128</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 25 41</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_err.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 138</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 162</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 183</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_swt.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 208</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 156</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 191</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53 14 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 11 13 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_lab.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 115</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 100 21 91 56 67 203 73 83 8 24 48 53 14 11 15 10 118 38 90 41 125 212 151 29 20 155 4 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 213</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57 22 203 93 111 157 206 163 129 166 193 86 73 66 60 131 201 83 53 14 94 64 104 11 13 34 21 19 96 98 23 91 8 77 81</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\modules\mod_eeprom.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 168</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 199</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44 19 96 98 93 111 157 206 163 129 166 193 86 13 23 94 64 66 60 131 201 104 28 32 174 203 73 83 41 25</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\E52417A_Demo-lite.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 122</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 89 178 176 82 211 126 133 140 169 143 198 150 175 209 179 149 120 195 184 183 152 62 207 128 191 188 197 180 127 80 189 142 192 114 85 65 205</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\dsi3_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 171</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 214</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 98</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\dsp_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 126</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 100</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\DSI3Drv\devices\M52417B\Bus\Dsi3Bus_Implementation.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 215</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 177</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 211</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92 38 93 111 157 206 163 129 166 193 86 91 96 98 13 23 94 64 66 60 131 201 104 90 101 196</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\gpio_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 169</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 107</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\includes\el_helper.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 113</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 172</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 140</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101 93 111 157 206 163 129 166 193 86 196 60 131 201 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\CommonInterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 194</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 178</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101 93 111 157 206 163 129 166 193 86 196 60 131 201 95 13 8 145 212</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\elmos\irq\M52417B\eeprom_ctrl_InterruptHandler.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 173</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137</file>
+                </tool>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 133</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 93 111 157 206 163 129 166 193 86 64 66 60 131 201 104 8 13 102</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>

@@ -1,0 +1,17 @@
+el_helper.pbi: \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes\el_helper.c \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_helper.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_types.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_types_ACM0_IAR.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  D:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_helper_ACM0_IAR.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\intrinsics.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\iccarm_builtin.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\iar_intrinsics_common.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_helper_ACM0_IAR.c

@@ -1,0 +1,134 @@
+/**
+\mainpage Firmware Documentation
+\brief
+This is a technical describtion of the USPA Demonstrator Firmware for T524.17A Devices.
+It can be used as:
+- starting point to understand how the software/IC works
+- technical API
+
+\section Architecture
+\subsection SysArcMeasSys System Architecture Measurement System
+The "System Architecture Measurement System" describes an example of a complete system for testing the 524.17 IC family. 
+
+The Ultrasonic Measurement System contains of up to X Sensors connected via DSI3 bus to a DSI3 Master, which in turn is connected to the Host µC. The Host µC transmits the data from the Master to the PC, where a dedicated SW, the SPM Tool, visualizes the data. 
+
+Short description of included components:
+"SPM Tool" in the Component ":PC" is an evaluation tool that makes it easy to configure the Master IC and to view the echo result data
+":Host µC" is an interface between the Master IC and the PC
+":Master 521.42" is the DSI3-Master for controlling the USPA-Sensors and readout result data
+"SensorX: 524.17" are the USPA-Sensors to be evaluated.
+
+\image html "System Architecture Measurement System.png" "System Architecture Measurement System" width=640px
+<a href="System Architecture Measurement System.png">klick here to enlarge image</a>
+
+\subsection SysArcSens System Architecture Sensor 524.17
+The component diagram "System Architecture Sensor 524.17" is an overview of the hardware blocks of the IC. This is an excerpt of the related datasheet.
+
+\image html "System Architecture Sensor 524.17.png" "System Architecture Sensor 524.17" width=640px
+<a href="System Architecture Sensor 524.17.png">klick here to enlarge image</a>
+
+\subsection SoftArc Software Architecture
+
+\image html "Software Architecture.png" "Software Architecture" width=640px
+<a href="Software Architecture.png">klick here to enlarge image</a>
+
+\section modules Modules 
+\subsection main main
+\brief \copybrief main.c
+- main.c <br> 
+
+\subsection def_app def_app
+\brief \copybrief def_app.h
+- def_app.h <br> 
+
+\subsection mod_ada mod_ada
+\brief \copybrief mod_ada.c
+- mod_ada.h <br> 
+- mod_ada.c <br> 
+
+\subsection mod_crc16 mod_crc16
+\brief \copybrief mod_crc16.c
+- mod_crc16.h <br> 
+- mod_crc16.c <br> 
+
+\subsection mod_dac mod_dac
+\brief \copybrief mod_dac.c
+- mod_dac.h <br> 
+- mod_dac.c <br> 
+
+\subsection mod_app mod_app
+\brief \copybrief mod_app.c
+- mod_app.h <br> 
+- mod_app.c <br> 
+
+\subsection mod_dsi3_cfg mod_dsi3_cfg
+\brief \copybrief mod_dsi3_cfg.c
+- mod_dsi3_cfg.h <br> 
+- mod_dsi3_cfg.c <br> 
+
+\subsection mod_dsi3 mod_dsi3
+\brief \copybrief mod_dsi3.c
+- mod_dsi3.h <br> 
+- mod_dsi3.c <br> 
+
+\subsection mod_dsp mod_dsp
+\brief \copybrief mod_dsp.c
+- mod_dsp.h <br>
+- mod_dsp.c <br>
+
+\subsection mod_eeprom_access mod_eeprom_access
+\brief \copybrief mod_eeprom_access.c
+- mod_eeprom_access.h <br> 
+- mod_eeprom_access.c <br> 
+
+\subsection mod_eeprom mod_eeprom
+\brief \copybrief mod_eeprom.c
+- mod_eeprom.h <br> 
+- mod_eeprom.c <br> 
+
+\subsection mod_err mod_err
+\brief \copybrief mod_err.c
+- mod_err.h <br> 
+- mod_err.c <br> 
+
+\subsection mod_gpio mod_gpio
+\brief \copybrief mod_gpio.c
+- mod_gpio.h <br> 
+- mod_gpio.c <br> 
+
+\subsection mod_lab mod_lab
+\brief \copybrief mod_lab.c
+- mod_lab.h <br> 
+- mod_lab.c <br> 
+
+\subsection mod_meas mod_meas
+\brief \copybrief mod_meas.c
+- mod_meas.h <br> 
+- mod_meas.c <br> 
+
+\subsection mod_mem mod_mem
+\brief \copybrief mod_mem.c
+- mod_mem.h <br>
+- mod_mem.c <br> 
+
+\subsection mod_swt mod_swt
+\brief \copybrief mod_swt.c
+- mod_swt.h <br>
+- mod_swt.c <br> 
+
+\subsection mod_syss mod_syss
+\brief \copybrief mod_syss.c
+- mod_syss.h <br> 
+- mod_syss.c <br> 
+
+\subsection mod_util mod_util
+\brief \copybrief mod_util.c
+- mod_util.h <br>
+- mod_util.c <br>
+
+\subsection mod_wdg mod_wdg
+\brief \copybrief mod_wdg.c
+- mod_wdg.h <br>
+- mod_wdg.c <br>
+
+ */ 

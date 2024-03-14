@@ -1,0 +1,30 @@
+mod_eeprom.pbi: \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules\mod_eeprom.c \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules/mod_eeprom.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules/def_app.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\DSI3Drv\includes\interfaces\Dsi3Bus_Types.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\irq\M52417B\dsi3_InterruptHandler.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes\el_types.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_types_ACM0_IAR.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  D:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\irq\M52417B/nvic_Interface.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\modules\devices\M52417B\def_dsi3.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes\io_m52417b.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_types.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/io_m52417b_IAR.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/core_cm0_IAR.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\intrinsics.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\iccarm_builtin.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\iar_intrinsics_common.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\includes/el_regs_m52417b_IAR.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules/mod_eeprom_access.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules/mod_wdg.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\elmos\modules\devices\M52417B\def_wdog.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules/mod_err.h \
+  D:\04_data\01_AK2\IMotion_E524.17\IMotion_E524.17\M52417A\M52417A_Demo-FW_lite_rev433\modules/mod_crc16.h

@@ -1,0 +1,265 @@
+# DSI3 Driver changelog
+
+##POE - 19/03/14 r6365 changes:
+  + Dsi3Bus_Implementation.c:
+    - Removed lower and upper boundary checks for CRM response offset time during bus initialization. 
+      (as it becomes problematic if non-dsi3-conformant response times are to be configured because of increased fcc bit time.)
+    - Added DiscMode error detection to DISC mode (ESWDSI3-21).
+
+##POE - 12/02/25 r6313 changes:
+ + Dsi3Bus_Implementation.c:
+   - Fixed DSI3 autosync side effect caused by task clk_1us update.
+   - In the Cmd_evt handler, if no response is required after CRM handler execution, 
+     the bus state is updated to RESPONSE_PROCESSED to trigger CRMProcessed callback.
+   - In the Cmd_evtprefiltered handler, if CRM is not addressed to current slave or 
+     no response is required the bus state is updated to RESPONSE_PROCESSED to trigger the 
+     CRMProcessed callback. 
+   - Updated Set1usClockFun & Get1usClockFun description.
+
+##POE - 18/12/04 r5918 changes:
+ + Dsi3Bus_Implementation.c:
+    - added manual start of the DISC current measurement for E52417A1 to TimerA event handler.
+
+##POE - 18/11/20 r5881 changes:
+ + Dsi3Bus_Implementation.c:
+    - Disable auto disc response during discovery mode init.
+    - halt DSI3 Timer during discovery mode init.
+    - removed redundant code from DiscErr event handler.
+    - Enable mode change callback in DiscErr & PDCMErr event handler.
+ + Dsi3Bus_Types.h:    
+    - Changed #pragma declaration for compiler compatibility.
+
+##POE - 18/09/24 r5786 changes:
+  + Dsi3Bus_Implementation.c:
+    - Re-Activated TimerA IRQ handling.
+    - Added DiscCurrCmp IRQ handling.
+    - Discovery mode debounce value is now configured with 0x0001.
+  + DSi3Bus_Implementation.h:
+    - Added DSI3_DRV_DISC_DEBOUNCE_VAL.
+
+##POE - 18/09/10 r5748 changes:
+  + Dsi3Bus_Implementation.c:
+    - reordered execution order of irq enabling and bus state change in the local mode update functions(bus state change is now done first)
+
+##POE - 18/09/06 r5733 changes:
+
+  + Dsi3Bus_Types.h:
+    - renamed \ref Dsi3BusIf_eInterfaceIds Lin_IfId_Count to \ref Dsi3_IfId_Count.
+    - added #pragma pack(4) to Dsi3Bus_uCrmCommand.
+    - added #pragma pack(4) to Dsi3Bus_CrmCommandFields.
+    - added #pragma pack(4) to Dsi3Bus_uCrmResponse.
+    
+  +  Dsi3Bus_Implementation.c:
+    - added dsi3 hw version check for 52417A during Dsi3BusImp_Initialization().
+    - added missing precompiler flag for ( DSI3_MAX_NUMBER_OF_CALLBACK_TABLES != 1u ) to \ref Dsi3BusImp_RemoveCallbackTableFun().
+    - added implementations for [ESWDSI3-11],[ESWDSI3-12],[ESWDSI3-14].
+  
+
+
+##POE - 18/05/02 -r5241 changes: 
+
+  + Dsi3Bus_Types.h:
+    - removed \ref Dsi3BusIf_eState_t Dsi3BusIf_eSTATE_RECEIVING.
+    - removed \ref Dsi3BusIf_eState_t Dsi3BusIf_eSTATE_COMMANDRECEIVED.
+    - removed \ref Dsi3BusIf_eState_t Dsi3BusIf_eSTATE_SYNCRECEIVED.
+    - removed \ref Dsi3BusIf_eState_t Dsi3BusIf_eSTATE_DISCRECEIVED.
+    - added type \ref Dsi3BusIf_pGenericInterfaceFunctions_t.
+    - added type \ref unsigned16-bit Dsi3BusIf_Time_t.
+    - added enum \ref Dsi3BusIf_eInterfaceIds.
+    - added type \ref Dsi3BusIf_InterfaceIds_t.
+    - added enum \ref Dsi3BusIf_eRCC_Slope.
+    - added type \ref Dsi3BusIf_RCC_Slope_t.
+    - Added enum \ref Dsi3BusIf_eRCC_Curve.
+    - added type \ref Dsi3BusIf_RCC_Curve_t.
+    - added enum \ref Dsi3BusIf_eRCC_CurrentOffset.
+    - added type \ref Dsi3_RCC_CurrentOffset_t.
+    - added enum \ref Dsi3BusIf_eFCC_Tbit.
+    - added type \ref Dsi3BusIf_FCC_TBit_t.
+    - changed \ref Dsi3BusIf_eState_t \ref Dsi3BusIf_eSTATE_ANSWERING to 1.
+    - changed \ref Dsi3BusIf_eState_t \ref Dsi3BusIf_eSTATE_WAIT_FOR_DISC_PULSE to 2.
+    - changed \ref Dsi3BusIf_eState_t \ref Dsi3BusIf_eSTATE_PDCMPREPAREBUFFER to 3.
+    - changed \ref Dsi3BusIf_eState_t \ref Dsi3BusIf_eSTATE_RESPONSE_PROCESSED to 4.
+    - increased \ref DSI3_ERROR_AREA_SIZE to 32.
+    - renamed \ref Dsi3BusIf_eRCC_Chiptime (was: dsi3BusIf_eRCC_Chiptime).
+    - renamed \ref Dsi3BusIf_ERR_NAD_OUT_OF_RANGE to Dsi3BusIf_ERR_SLAVEID_OUT_OF_RANGE.
+  
+  + Dsi3Bus_Interface.h:
+    -  removed DSI3_MAX_NUMBER_OF_CALLBACK_TABLES from interface declaration. It is now to be defined in the Dsi3DrvImp_CompilationConfig.h.
+    -  removed callbacks and callbacks context parameters from \ref Dsi3BusIf_InitializationFun_t. Callbacks are now registered using the \ref Dsi3BusIf_AppendCallbackTableFun_t function.
+    
+   /* Initialize Driver by calling Interface-Function Initialization */
+   retVal = Dsi3DrvImp_BusIfFuns->Initialization((Dsi3BusIf_pGenericEnvData_t) Dsi3DrvImp_BusEnvData, 
+                                                  sizeof(Dsi3DrvImp_BusEnvData), 
+                                                  &dsi3BusImpCfgData);
+   if (TRUE == retVal)
+   {
+    /* Set callback table for DSI3 bus layer */
+    retVal = Dsi3DrvImp_BusIfFuns->AppendCallbackTable((Dsi3BusIf_pGenericEnvData_t) Dsi3DrvImp_BusEnvData, 
+                                                       &Dsi3DrvImp_BusCallbacks, 
+                                                       DSI3DRVIMP_BUS_CALLBACK_CTX_DATA);                                                  
+   }
+  
+    -  removed ConfigureHardwareCRC() interface function. To be configured once during initialization.
+    -  removed DelayPDCMErrHandling() interface function. To be configured once during initialization.
+    -  removed DelayDISCErrHandling() interface function. To be configured once during initialization.
+    -  removed currentMode parameter from \ref Dsi3BusIf_PDCMCallbackFun_t. The application's PDCM handler implementation needs to be updated accordingly.
+    -  removed currentMode parameter from \ref Dsi3BusIf_CRMCallbackFun_t. The application's CRM handler implementations need to be updated accordingly.
+    -  added Dsi3HwModIf_sInterfaceFunctions as dsi3 hardware module sub interface. This interface is now to be used for dsi3 hardware module related configurations.
+    
+     Dsi3BusIf_sThis_t loc_This;
+    /* Retrieve DSI3 hardware module interface */
+    retVal = Dsi3DrvImp_BusIfFuns->GetSubInterface(Dsi3DrvImp_BusEnvData, Dsi3_IfId_HWMODULE, &loc_This);
+    if (TRUE == retVal)
+    {
+      Dsi3DrvImp_HWModIfFuns = (Dsi3BusIf_cpGenericInterfaceFunctions_t)loc_This.IfFunsTbl;
+    }
+    else{}
+    
+    -  added \ref Dsi3BusIf_UpdateCRMFCCBlankingTimeOffset_t. The update takes effect once the CRM mode has been re-enabled.
+    -  added \ref Dsi3BusIf_UpdatePDCMFCCBlankingTimeOffset_t. The update takes effect once the PDCM mode has been re-enabled.
+      -  moved \ref Dsi3BusIf_Get1usClockFun_t from the bus interface.
+      -  moved \ref Dsi3BusIf_Set1usClockFun_t from the bus interface.
+      -  moved \ref Dsi3BusIf_GetCRMSyncCntFun_t from the bus interface.
+      -  moved \ref Dsi3BusIf_GetPDCMPeriodDurationFun_t from the bus interface.
+    -  added \ref Dsi3BusIf_GetSubInterfaceIfFun_t function to DSI3 bus interface (to access the dsi3 hardware module sub interface).
+    -  changed periodLength of \ref Dsi3BusIf_PdcmSyncReceivedCbFun_t to Dsi3BusIf_Time_t.
+    -  changed return value of \ref Dsi3BusIf_TimestampFun_t to \ref Dsi3BusIf_Time_t.
+    -  changed return value of \ref Dsi3BusIf_Set1usClockFun_t to \ref Dsi3BusIf_Bool_t.
+    -  changed return value of \ref Dsi3BusIf_UpdateCRMResponseTimeOffset_t to \ref Dsi3BusIf_Bool_t.
+    -  changed return value of \ref Dsi3BusIf_UpdatePDCMStartSlotOffset_t to \ref Dsi3BusIf_Bool_t.
+    -  changed return value of \ref Dsi3BusIf_UpdatePDCMSlotDuration_t to \ref Dsi3BusIf_Bool_t.
+    -  changed return value of \ref Dsi3BusIf_UpdatePDCMResponseDuration_t to \ref Dsi3BusIf_Bool_t.
+  
+  
+  +  DSi3Bus_Implementation.h:
+    -  removed define value DSI3BUSIMP_CONFIG_DATA_VERSION.
+    -  removed define value DSI3BUSIMP_BLANK_MINTIME.
+    -  removed DelayPDCMErrHandlingFun() interface function.
+    -  removed DelayDISCErrHandlingFun() interface function.
+    -  removed Dsi3BusImp_ConfigHardwareCRC() interface function.
+    -  removed all extern keywords from the function declarations.
+    -  added define value for \ref DSI3_IMPL_TARGET_HARDWARE_VERSION. For checking the added DSI3 module register HW_VERSION.
+    -  added define value \ref DSI3_DRV_DISC_BLANK_OFFSET. Works as an offset to the DISC period end for the FCC blanking time.
+    -  added \ref RCC_SlopeSel as parameter to Dsi3BusImp_sCfgData.
+    -  added \ref RCC_CurveSel as parameter to Dsi3BusImp_sCfgData.
+    -  added \ref RCC_CurrentOffset as parameter to Dsi3BusImp_sCfgData.
+    -  added \ref CRMEnableSlaveIdPrefilter as parameter to Dsi3BusImp_sCfgData. Replaces the precompiler flag DSI3_CMDEVT_USE_SLAVEID_PREFILTER 
+    -  updated \ref DSI3_IMPL_CFG_DATA_VERSION to 0x0103.
+    -  updated function headers according to the bus interface changes.
+  
+ 
+  +  Dsi3Bus_Implementation.c:
+  - removed CRMResponseTimeOffset from CRM blanking time calculation. CRM FCC Blanking Time configuration is now absolute. CRM FCC blanking time should be greater than dsi3 master CRM cmd reception time -  CRM reponse duration.
+  - removed the 26us offset from PDCM blanking time calculation. PDCM FCC Blanking Time configuration is now absolute. It is strongly advised to select a blanking time >= 26us, otherwise the FCC blanking will not be automatically deactivated!
+  - removed interface functions according to the bus interface changes.
+  - removed precompiler flag DSI3_BUSIMP_ENABLE_TIMERA_RAMP.
+  - removed precompiler flag ENABLE_CRM_BASED_ADDRESSING.
+  - removed precompiler flag DSI3BUSIMP_ENABLE_DEBUG_MODE.
+  - removed update of PDCM timeslot during loc_Dsi3BusImp_PreparePDCMBuffer().
+  - removed hardware CRC configuration checks from Task().
+  - Dsi3BusImp_Initialization()now checks DSI3_HW_VERSION register for target IC platform.
+    - **0** indicates a M52417A device
+    - **1** indicates a M52417B device
+  - added PrepareNextCommState() calls to PDCMErrEvt and DISCErrEvt IRQ handler, in case the application duty cycle does not allow bus task execution before next dsi3 master signal.
+  - requesting a mode change now forces a mode configuration reset, if applied to the same communication mode.
+  - PDCMEvt IRQ handler initially activates the RCC auto response and update the FCC Blanking Time to PDCM conditions now.
+  - added a Dsi3BusImp_InterruptHandler_CmdEvt_Prefiltered() handler for the CMDEvt IRQ.
+  - RCC_FINISH IRQ is now cleared before being enabled during PDCM buffer preparation.
+  - Dsi3BusImp_Initialization() pre-initializes its RAM environment data with 0 now.
+  - added a check during PDCMEvt IRQ handling for TimerC configuration, to compare current DSI3 timer value and the to be set FCC Blanking Time auto disable offset. It switches FCC Blanking off if the timer value is already passed the to be configured value.
+  - Dsi3BusImp_Shutdown() now clears all callback tables and their context data pointer.
+  - updated interface functions according to the bus interface changes.
+  - DISCPeriodLength in Dsi3BusImp_Initialization() is now handled differently. DISCPeriodLength must be at least > \ref DSI3_DRV_DISC_BLANK_OFFSET, otherwise default period length of 125us is selected.
+  - Dsi3BusImp_Initialization() does not automatically start in CRM mode now, but in the configured DefaultCommunicationMode.
+  - changing the communication mode now clears all pending DSI3 IRQs.
+  - while in discovery mode, the slave id is now updated during the next Bus-Task execution after the slave's successful addressing.
+  - during PDCM buffer preparation, the update of the internal bus state machine is now done before  enabling the RCC_FINISH IRQ.
+  - moved the auto response enable call from PDCM buffer preparation to the PDCMEvt IRQ handler.
+  - Dsi3BusImp_CheckBusActivityFun() now disables global interrupts while updating its bus activity status and and re-enables  them afterwards. It does no longer check the FCC_LOW hardware flag.
+  
+## POE - 18/02/27 - r4391 changes: 
+
+  - added an exception to RCC_FINISH to keep the dsi3 timer running if in PDCM mode.
+  - added an interface function to check if there was any bus activity since last call of this function.
+  - added multi callback table support (default: still 1, so no actual performance or RAM overhead with active optimization).
+  - moved dsi3 clock update check outside the internal bus state machine -  is now checked with every dsi3Bus->Task() call.
+  
+
+
+## POE - 18/02/21 - r4322 changes: 
+
+  - added FCC blanking disable to RCC_FINISH and CRCError irq event handler.
+  - fixed/added source code documentation (functions headers, etc.) 
+
+
+
+## POE - 18/02/09 - r4209 changes: 
+
+  - added missing DISCDelayErrEvtHandling assignment in bus initialization.
+
+
+
+## POE - 18/02/08 - r4203 changes: 
+
+  - implemented delayed PDCM/DISC err processing
+  - added 2 configuration parameters for DSI3 bus init have been added:
+  
+  const Dsi3BusImp_CfgData_t dsi3BusImpCfgData =
+  {
+      .Version = DSI3BUSIMP_CONFIG_DATA_VERSION,
+      ..........
+  
+        .PDCMDelayErrEvtHandling = TRUE,
+        .DISCDelayErrEvtHandling = TRUE
+  };
+ 
+
+  - added 2 Interface functions have been added to alter the processing state during runtime:
+  
+  const Dsi3BusImp_CfgData_t dsi3BusImpCfgData =
+  Dsi3BusIF->DelayPDCMErrHandling(envData, delayOn)
+  Dsi3BusIF->DelayDISCErrHandling(envData, delayOn)
+  
+  delayOn= TRUE: delayedProcessing is active, or inactive if FALSE
+
+
+## POE - 18/02/01 - r4155 changes: 
+
+  - enabled FCC_ERROR irq during PDCM & DISC mode. 
+
+
+## POE - 18/01/22 - r4089 changes: 
+
+  - switched cmd buffer read from DSI3_CTRL_FCC_CMD_READ() to DSI3_CTRL_FCC_CMD_READ(val) to prevent a compiler warning. 
+
+
+
+## POE - 18/01/19 - r4063 changes: 
+
+  - added timer reset and disabling of blanking on FCCErrEvt and StartErrEvt. 
+
+
+
+## POE - 18/01/18 - r4029 changes: 
+
+  - added demo code usage disclaimer to source files. 
+
+
+
+## POE - 18/01/17 - r4016 changes: 
+
+  - added timer_reset after CRM broadcast handling which halts timer until next falling edge.
+  - added another timer reset to RCC_FINISH to prevent preemptive pdcm response generation after successful crm response handling - mode change to PDCM.
+  - added local reset functions for CRM and PDCM state re-init to reduce processing overhead during response_processed state. 
+  - corrected wrong state transition after PDCM RccFinish evt: did skip response_processed state and therefore an eventually configured PDCMProcessedCb was not called.
+  - fixed possible preemptive PDCM response generation after a handled CRM BRC for defined slot times > Crm response time.
+
+
+
+## POE : 
+
+  - initial pre-release.
+  
+@author POE
+@date 2018/09/05
+@version 0.01

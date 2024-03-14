@@ -1,0 +1,62 @@
+#Generating source browse information for project E52417A_Demo-lite
+
+
+#Abbreviations
+cc = D$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = D$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = D$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build Dsi3Bus_Implementation.pbi : index Dsi3Bus_Implementation.xcl
+build el_helper.pbi : index el_helper.xcl
+build CommonInterruptHandler.pbi : index CommonInterruptHandler.xcl
+build dsi3_InterruptHandler.pbi : index dsi3_InterruptHandler.xcl
+build dsp_InterruptHandler.pbi : index dsp_InterruptHandler.xcl
+build eeprom_ctrl_InterruptHandler.pbi : index eeprom_ctrl_InterruptHandler.xcl
+build gpio_InterruptHandler.pbi : index gpio_InterruptHandler.xcl
+build nvic_InterruptHandler.pbi : index nvic_InterruptHandler.xcl
+build swtimer_InterruptHandler.pbi : index swtimer_InterruptHandler.xcl
+build sys_state_InterruptHandler.pbi : index sys_state_InterruptHandler.xcl
+build system_ctrl_InterruptHandler.pbi : index system_ctrl_InterruptHandler.xcl
+build mod_ada.pbi : index mod_ada.xcl
+build mod_app.pbi : index mod_app.xcl
+build mod_crc16.pbi : index mod_crc16.xcl
+build mod_dac.pbi : index mod_dac.xcl
+build mod_dsi3.pbi : index mod_dsi3.xcl
+build mod_dsi3_cfg.pbi : index mod_dsi3_cfg.xcl
+build mod_dsp.pbi : index mod_dsp.xcl
+build mod_eeprom.pbi : index mod_eeprom.xcl
+build mod_eeprom_access.pbi : index mod_eeprom_access.xcl
+build mod_err.pbi : index mod_err.xcl
+build mod_gpio.pbi : index mod_gpio.xcl
+build mod_lab.pbi : index mod_lab.xcl
+build mod_meas.pbi : index mod_meas.xcl
+build mod_mem.pbi : index mod_mem.xcl
+build mod_swt.pbi : index mod_swt.xcl
+build mod_syss.pbi : index mod_syss.xcl
+build mod_util.pbi : index mod_util.xcl
+build mod_wdg.pbi : index mod_wdg.xcl
+build main.pbi : index main.xcl
+build E52417A_Demo-lite_part0.pbi : link Dsi3Bus_Implementation.pbi el_helper.pbi CommonInterruptHandler.pbi dsi3_InterruptHandler.pbi dsp_InterruptHandler.pbi
+build E52417A_Demo-lite_part1.pbi : link eeprom_ctrl_InterruptHandler.pbi gpio_InterruptHandler.pbi nvic_InterruptHandler.pbi swtimer_InterruptHandler.pbi sys_state_InterruptHandler.pbi
+build E52417A_Demo-lite_part2.pbi : link system_ctrl_InterruptHandler.pbi mod_ada.pbi mod_app.pbi mod_crc16.pbi mod_dac.pbi
+build E52417A_Demo-lite_part3.pbi : link mod_dsi3.pbi mod_dsi3_cfg.pbi mod_dsp.pbi mod_eeprom.pbi mod_eeprom_access.pbi
+build E52417A_Demo-lite_part4.pbi : link mod_err.pbi mod_gpio.pbi mod_lab.pbi mod_meas.pbi mod_mem.pbi
+build E52417A_Demo-lite_part5.pbi : link mod_swt.pbi mod_syss.pbi mod_util.pbi mod_wdg.pbi main.pbi
+build E52417A_Demo-lite.pbd : link E52417A_Demo-lite_part0.pbi E52417A_Demo-lite_part1.pbi E52417A_Demo-lite_part2.pbi E52417A_Demo-lite_part3.pbi E52417A_Demo-lite_part4.pbi E52417A_Demo-lite_part5.pbi
+build E52417A_Demo-lite.pbw : browsedata E52417A_Demo-lite.pbd
+
+

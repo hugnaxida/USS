@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\M52417A_Demo-lite.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\E52417A_Demo-lite.ewp</path>
+    </project>
+    <batchBuild>
+        <batchDefinition>
+            <name>BuildAll_Debug</name>
+            <member>
+                <project>FPGA52417B_Demo</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>M52417A_Demo</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>M52417A_Demo-lite</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>E52417A_Demo</project>
+                <configuration>Debug</configuration>
+            </member>
+            <member>
+                <project>E52417A_Demo-lite</project>
+                <configuration>Debug</configuration>
+            </member>
+        </batchDefinition>
+    </batchBuild>
+</workspace>

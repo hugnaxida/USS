@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "version.h": "c",
+        "mod_syss.h": "c",
+        "def_syss.h": "c",
+        "io_m52417a.h": "c",
+        "el_types.h": "c",
+        "nvic_interrupthandler.h": "c",
+        "dsi3bus_types.h": "c",
+        "dsi3bus_implementation.h": "c",
+        "def_dsp.h": "c",
+        "sys_state_interrupthandler.h": "c",
+        "mod_gpio.h": "c",
+        "mod_wdg.h": "c",
+        "def_ada.h": "c",
+        "def_wdog.h": "c",
+        "dsi3bus_interface.h": "c",
+        "mod_dac.h": "c",
+        "def_gpio.h": "c",
+        "def_dac.h": "c",
+        "mod_swt.h": "c",
+        "drv_uart.h": "c",
+        "el_types_acm0_iar.h": "c",
+        "mod_dsi3.c": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
